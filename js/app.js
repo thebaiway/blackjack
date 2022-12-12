@@ -5,8 +5,6 @@ let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 
-console.log(sum)
-
 if (sum <= 20) {
     console.log("Hit?")
 } else if (sum === 21) {
