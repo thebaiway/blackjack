@@ -4,14 +4,20 @@ let hitCard = Math.floor(Math.random() * 10) + 2
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
+let message = ""
 
-if (sum <= 20) {
-    console.log("Hit?")
-} else if (sum === 21) {
-    console.log("Blackjack! 🥳")
-    hasBlackJack = true
-} else {
-    console.log("You've busted! 😢 ")
-    isAlive = false
+
+function startGame () {
+    if (sum <= 20) {
+    message = "Hit?"
+    } else if (sum === 21) {
+        message = "Blackjack! 🥳"
+        hasBlackJack = true
+    } else {
+        message = "You've busted! 😢 "
+        isAlive = false
+    }
+
+console.log(message)
+
 }
-
