@@ -16,9 +16,32 @@ p {
     text-align: center;
 }
 
+#playing-card-div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: -50px -50px; 
+}
+
+#sum-el {
+    margin-top: 50px;
+}
 #message-el {
     font-style: italic;
+    margin: 50px 0px;
 }
+
+#button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 button {
     color: #016f32;
@@ -29,6 +52,7 @@ button {
     border-radius: 2px;
     font-weight: bold;
     font-size: 1.3rem;
+    margin: 5px;
     
 }
 
