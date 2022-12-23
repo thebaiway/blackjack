@@ -1,3 +1,7 @@
+// let player = {
+//     name: "Bailee",
+//     chips:  145
+// }
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -6,6 +10,9 @@ let message = ""
 let messageEl = document.getElementById('message-el')
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerEl = document.getElementById("player-el")
+
+// playerEl.textContent = player.name + ": $" + player.chips
 
 function getRandomCard() {
     return Math.floor(Math.random() * 10) + 2
@@ -42,11 +49,12 @@ function renderGame () {
 }
 
 function hitCard () {
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    renderGame()
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        renderGame()
+    }
+   
 }
-
-
 
